@@ -3,7 +3,7 @@
   
       <div v-for="field in formFields" :key="field.name">
         <div>{{field.label}}</div>
-        <component 
+        <component
           :is="field.type.element" 
           :type="field.type.type"
           :value="form[field.name]"
@@ -54,18 +54,4 @@ export default {
 </script>
 
 <style scoped>
-h1, h2 {
-  font-weight: normal;
-}
-ul {
-  list-style-type: none;
-  padding: 0;
-}
-li {
-  display: inline-block;
-  margin: 0 10px;
-}
-a {
-  color: #42b983;
-}
 </style>
